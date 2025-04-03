@@ -8,18 +8,18 @@ module.exports = {
   ],
   theme: {
     colors: {
-      gray:{
-        "50":"#191c1f",
-        "100":"#111417",
-        "200":"#0e1114",
-        "300":"#0a0d10",
-        "400":"#070a0d",
-        "500":"#04070a",
-        "600":"#010407",
-        "700":"#000104",
-        "800":"#000000",
-        "900":"#000000",
-    },
+      gray: {
+        "50": "#191c1f",   // Lightest in your original
+        "100": "#111417",  
+        "200": "#0e1114",  
+        "300": "#0a0d10",  
+        "400": "#070a0d",  
+        "500": "#04070a",  
+        "600": "#010407",  
+        "700": "#000104",  
+        "800": "#000000",  // Pure black
+        "900": "#000000"   // Pure black (duplicate)
+      },
     // coral
     primary: {
       "50": "#fef5f2",
@@ -255,6 +255,31 @@ module.exports = {
         ],
 
         // Body
+        //XXL
+      "body-xxl-400":[   
+        "24px",
+        {
+        lineHeight: "32px",
+        letterSpacing: "0",
+        fontWeight: "400", //normal
+        },
+    ],
+    "body-xxl-500":[   
+        "24px",
+        {
+        lineHeight: "32px",
+        letterSpacing: "0",
+        fontWeight: "500", //normal
+        },
+    ],
+    "body-xxl-600":[   
+        "24px",
+        {
+        lineHeight: "32px",
+        letterSpacing: "0",
+        fontWeight: "600", //normal
+        },
+    ],
         //XL
       "body-xl-400":[   
           "20px",
@@ -478,7 +503,42 @@ module.exports = {
             fontWeight: "400",
           },
         ],
-    },
+      },
+
+      screens: {
+        'xs': '320px',
+        'tiny': '360px',
+        'sm': '575px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1440px',
+        '3xl': '1680px',
+        '4xl': '1920px'
+      },
+      container: {
+        center: true,
+        screens: {
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1320px',
+          '2xl': '1320px',
+          '3xl': '1320px',
+          '4xl': '1320px'
+        },
+        padding: {
+          DEFAULT: '0rem',
+          sm: '0rem',
+          md: '0rem',
+          lg: '0rem',
+          xl: '0rem',
+          '2xl': '0rem',
+          '3xl': '0rem',
+          '4xl': '0rem',
+        }
+      },
+      
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',
